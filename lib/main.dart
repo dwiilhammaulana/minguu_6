@@ -76,6 +76,31 @@ class MyApp extends StatelessWidget {
                                           )
                                         ],
                                       ),
+                                      SizedBox(height: 20),
+Container(
+  margin: const EdgeInsets.only(right: 10, left: 10),
+  child: SizedBox(
+    height: 40,
+    width: double.infinity,
+    child: ElevatedButton(
+      onPressed: () {
+        // Aksi tombol di sini
+        print("Tombol ditekan!");
+      },
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.blue,
+      ),
+      child: const Text(
+        "Text",
+        style: TextStyle(color: Colors.white),
+      ),
+    ),
+  ),
+),
+
+
+                                      
+                                      
                                       
             ],
           ),
